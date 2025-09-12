@@ -93,5 +93,27 @@
                 <td>483 BCE</td>
             </tr>
         </table>
+        <hr>
+        <h2>Code Display</h2>
+        <p>
+            This Node.js code snippet creates a simple Node.js HTTP server that writes a response to the client and listens on port 8080. 
+            If it is running, a message will be logged stating "server running on port 8080".
+        </p>
+        <pre>
+            const http = require('http');
+
+            http.createServer((request, response) => {
+
+	            response.writeHead(200, {
+		            'Content-Type': 'text/plain'
+	            });
+	            response.write('Hello from Pieces!');
+	            response.end();
+
+            }).listen(8080);
+
+            console.log('server running on port 8080'); 
+        </pre>
+        <a href="https://pieces.app/collections/nodejs">Node.js Snippets</a>
     </body>
 </html>
